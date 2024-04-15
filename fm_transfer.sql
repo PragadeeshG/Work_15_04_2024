@@ -1,0 +1,15 @@
+create table if not exists fm_transfer(
+id varchar(255) not null,
+file_type_applicable varchar(255) null,
+script_name varchar(255) null,
+host varchar(255) null,
+target_host varchar(255) null,
+target_location varchar(255) null,
+secure_copy char null,
+script_location varchar(255) null,
+encrypt_data char null,
+encryption_key varchar(255) null,
+error_code integer null,
+error_severity varchar(255) null,
+entity_state varchar(255) null,
+constraint fm_transfer_pk primary key(id));
